@@ -80,7 +80,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.hourly-forecast-container .hour-weather-item > p:first-child{
+.hourly-forecast-container .hour-weather-item > p:first-child {
   color: #fff;
   opacity: 75%;
   font-weight: 500;
@@ -95,7 +95,8 @@ body {
 .weather-details-container {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(4,220px);
+  grid-template-columns: repeat(4, 220px);
+  column-gap: 15px;
 }
 .weather-detail-item {
   background-color: #fff;
@@ -123,11 +124,22 @@ body {
   margin-left: 4px;
 }
 
+.weather-details-container .weather-detail-item > div > span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #2a394f;
+  margin-left: 3px;
+}
+
+.weather-detail-item-wind {
+  display: flex;
+  flex-direction: row;
+}
+
 .weather-details-container .weather-detail-item > div > img {
   width: 35px;
   height: 35px;
 }
-
 
 /*Utilidades*/
 .custom_input {
