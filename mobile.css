@@ -1,0 +1,187 @@
+/*TABLETS*/
+@media (min-width: 541px) and (max-width: 1024px) {
+  .app-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+    column-gap: 40px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+  }
+  .navbar-container > img {
+    margin-bottom: 15px;
+  }
+
+  .showcase-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 60px;
+  }
+
+  .hourly-forecast-container {
+    border-radius: 40px;
+    padding: 35px;
+    background: #007dfe;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 125, 254, 1) 0%,
+      rgba(58, 162, 255, 1) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .right-column {
+    padding-right: 30px;
+  }
+
+  .weather-details-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .weekly-forecast-container {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+/*SMARTPHONES/ CELULARES*/
+
+@media (max-width: 541px) {
+  .app-container {
+    grid-template-columns: 100%;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  .navbar-container > img {
+    margin-bottom: 15px;
+  }
+
+  .showcase-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .showcase-text {
+    transform: translateX(20px);
+  }
+  .showcase-container .showcase-text > h2:first-child {
+    font-size: 2.325rem;
+    font-weight: 700;
+    color: #2a394f;
+  }
+  .showcase-container .showcase-text > h2:last-child {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2a394f;
+  }
+  .showcase-container .showcase-text > p {
+    color: #9aa0a8;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+  .showcase-container > img {
+    width: 200px;
+    position: relative;
+    left: 20px;
+  }
+
+  .hourly-forecast-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 25px;
+  }
+  .hourly-forecast-container .hour-weather-item > img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  .hourly-forecast-container .hour-weather-item > p:first-child {
+    font-size: 0.825rem;
+    text-align: center;
+  }
+  .hourly-forecast-container .hour-weather-item > p:last-child {
+    font-size: 1.5rem;
+  }
+
+  .weather-details-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .weather-details-container .weather-detail-item {
+    padding: 18px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 20px;
+    min-width: 0;
+    word-break: break-word;
+    box-sizing: border-box;
+  }
+  .weather-details-container .weather-detail-item > p:first-child {
+    color: #8f8f8f;
+    font-size: 0.825rem;
+  }
+  .weather-details-container .weather-detail-item > div > p {
+    font-size: 1.5rem;
+  }
+  .weather-details-container .weather-detail-item > div > span {
+    font-size: 0.5rem;
+    margin-left: 3px;
+  }
+
+  .weather-details-container .weather-detail-item > div > img {
+    width: 25px;
+  }
+
+  .weekly-forecast-container {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .weekly-forecast-container .day-weather-item > p {
+    font-size: 0.925rem;
+  }
+  .weekly-forecast-container .day-weather-item > div > p:first-child {
+    font-size: 0.875rem;
+  }
+  .weekly-forecast-container .day-weather-item > div > p:last-child {
+    font-size: 0.875rem;
+  }
+}
